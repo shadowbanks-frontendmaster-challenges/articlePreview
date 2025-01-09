@@ -84,12 +84,18 @@ main {
   display: flex;
 }
 .container .share {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 2rem;
   margin-left: auto;
   border-radius: 50%;
   background-color: hsl(210, 46%, 95%);
   cursor: pointer;
 }
-.container .share .share-optionsDropdown, .container .share .share-optionsDropdown.show {
+.container .share .share-optionsDropdown,
+.container .share .share-optionsDropdown.show {
   display: none;
 }
 .container .share img {
@@ -200,6 +206,11 @@ main {
   .container .share-options.show {
     display: none;
   }
+}
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=styles.css.map */
